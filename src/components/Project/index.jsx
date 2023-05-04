@@ -1,7 +1,7 @@
 // CSS 
 import styles from "./Project.module.css";
 // ASSETS 
-import emConstrucao from "../../assets/emConstrucao.jpg"
+import emConstrucao from "../../assets/EmConstrucao.jpg"
 
 
 const Project = ({projeto}) => {
