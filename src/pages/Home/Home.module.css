@@ -1,0 +1,19 @@
+.home_container {
+  border: 2.5px solid black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.filter {
+  align-self: center;
+  display: flex;
+  gap: 64px
+}
+
+.projects {
+  flex-direction: column;
+  display: flex;
+}
