@@ -1,8 +1,12 @@
-
+import styles from "./AboutMe.module.css"
 
 const AboutMe = () => {
   return (
-    <div>AboutMe</div>
+    <header> 
+      <div className={styles.cointainer}> 
+        <p className={styles.text}>Hélio Pompei!</p>
+      </div>
+    </header>
   )
 }
 

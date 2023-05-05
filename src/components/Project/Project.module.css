@@ -7,20 +7,41 @@
 }
 
 .project_description {
-    text-align: center;
-    border: solid 1px  BLACK;
     width: 50%;
     height: 100%;
-    padding: 10px;
+    padding-top: 64px;
+}
+
+.isLeft {
+    text-align: left;
+
+    justify-content: right;
+    padding-right: 64px;
+}
+
+.isRight {
+    text-align: right;
+
+    justify-content: left;
+    padding-left: 64px;
 }
 
 .project_img_container {
-    border: solid 1px  BLACK;
+    display: flex;
+    align-items: center;
     width: 50%;
     height: 100%;
 }
 
 .project_img_container img {
-    height: 100px;
-    width: 150px;
+    display: flex;
+    height: 200px;
+    width: 300px;
+    border: solid 4px black;
+    
+}
+
+.project_img_container img:hover {
+    box-shadow: 10px 10px rgba(0, 0, 0, .4);
+    cursor: pointer;
 }

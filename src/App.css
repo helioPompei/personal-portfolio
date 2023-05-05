@@ -1,4 +1,5 @@
 .App {
     width: 1200px;
-    background-color: white;
+    background-color: #FFF;
+    border: solid 2px #ffa700;
 }

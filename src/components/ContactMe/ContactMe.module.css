@@ -12,11 +12,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 3px solid orange;
+  border: 3px solid #ffa700;
   height: 550px;
   width: 420px;
   padding: 32px;
-  box-shadow: 4px 4px 6px 0 rgba(211, 155, 33, 0.4);
+  box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
 
 input {
