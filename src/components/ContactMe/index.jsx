@@ -42,7 +42,9 @@ const ContactMe = () => {
   return (
     <div className={styles.form_container}>
       <form onSubmit={handleSubmit} className={styles.form_box}>
-        <h1 className={styles.titulo}> &rsaquo; Me mande uma mensagem! </h1>
+        <h1 className={styles.titulo}>
+          &rsaquo; Me mande uma <b>Mensagem</b>!
+        </h1>
         <label>
           <ion-icon name="person-outline"></ion-icon>
           <span> Nome </span>
@@ -80,8 +82,7 @@ const ContactMe = () => {
           />
         </label>
         <button className={styles.submit_button} type="submit">
-          {" "}
-          Enviar{" "}
+          Enviar
         </button>
       </form>
     </div>

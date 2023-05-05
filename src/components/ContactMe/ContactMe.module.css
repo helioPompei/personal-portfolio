@@ -12,11 +12,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-  border: 2.5px solid black;
+  border: 3px solid orange;
   height: 550px;
   width: 420px;
   padding: 32px;
+  box-shadow: 4px 4px 6px 0 rgba(211, 155, 33, 0.4);
 }
 
 input {
@@ -45,6 +45,8 @@ label {
   padding-bottom: 32px;
   font-size: 42px;
   text-align: center;
+  color: #ffa700;
+  -webkit-text-stroke-color: #000;
 }
 
 .submit_button {
@@ -52,4 +54,13 @@ label {
   height: 42px;
   width: 100%;
   padding: 5px;
+  font-size: 24px;
+  color: #ffffff;
+  background-color: #ffa700;
+  cursor: pointer;
+  box-shadow: 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+}
+
+.submit_button:hover {
+  box-shadow: none;
 }
