@@ -1,5 +1,5 @@
 import * as S from "./styles";
-import image from "../../assets/foto.jpg";
+import image from "../../../public/Foto.jpg";
 import { TypeAnimation } from "react-type-animation";
 import { FaReact } from "react-icons/fa";
 import { Techs } from "../../components/Techs";
