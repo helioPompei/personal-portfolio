@@ -14,7 +14,7 @@ export const Header = () => {
 
         <ul>
           <li>
-            <Link smooth={true} spy={true} offset={10} to="home">
+            <Link smooth={true} spy={true} to="home">
               Home
             </Link>
           </li>
