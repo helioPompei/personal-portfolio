@@ -20,24 +20,22 @@ export const Header = () => {
           </li>
           <li>
             <Link smooth={true} spy={true} offset={10} to="projects">
-              Sobre
+              Projetos
             </Link>
           </li>
           <li>
             <Link smooth={true} spy={true} offset={10} to="about">
-              Projetos
+              Sobre
             </Link>
           </li>
         </ul>
 
-        <S.ContactContainer>
-          
-          <Link smooth={true} spy={true} offset={10} to="about">
-          <AiOutlineMail />
+        <S.ContactButtonContainer>
+          <Link smooth={true} spy={true} offset={10} to="contact">
+            <AiOutlineMail />
             <p>Contato</p>
           </Link>
-        </S.ContactContainer>
-        
+        </S.ContactButtonContainer>
       </S.HeaderContent>
     </S.HeaderContainer>
   );

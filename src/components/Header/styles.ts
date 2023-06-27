@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
+  z-index: 1;
   background-color: ${(p) => p.theme.colors.white};
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   position: fixed;
@@ -41,6 +42,23 @@ export const LogoContainer = styled.div`
   }
 `;
 
-export const ContactContainer = styled.div`
-// MINHA LOGICA AQUI
+export const ContactButtonContainer = styled.div`
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffd700;
+    border: none;
+    border-radius: 5px;
+    gap: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 1.25em;
+  }
+
+  a:hover {
+    background-color: #d4b400;
+  }
 `;

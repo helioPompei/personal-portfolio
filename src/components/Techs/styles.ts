@@ -23,3 +23,13 @@ export const TechTitle = styled.div`
   h1 {
   }
 `;
+
+export const ContainerMotionTechs = styled.div`
+  div {
+    display: flex;
+  }
+  div div svg:hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: translateY(-10px);
+  }
+`;

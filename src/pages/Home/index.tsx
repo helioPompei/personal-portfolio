@@ -1,23 +1,31 @@
 import * as S from "./styles";
-import image from "../../../public/Foto.jpg";
+import image from "../../assets/Foto.jpg";
 import { TypeAnimation } from "react-type-animation";
 import { FaReact } from "react-icons/fa";
 import { Techs } from "../../components/Techs";
+import { motion } from "framer-motion";
 
 export const Home = () => {
   return (
     <S.HomeContainer id="home">
       <S.HomeContent>
         <S.RightContainer>
-          <S.TitleContainer>
-            <h1>
-              Desenvolvedor <span>Front-End</span>
-            </h1>
-            <S.ReactDiv>
-              <h1>React</h1>
-              <FaReact />
-            </S.ReactDiv>
-          </S.TitleContainer>
+          <motion.div
+            style={{ zIndex: "-1" }}
+            initial={{ x: -100, opacity: 0 }} // Initial state of the component
+            animate={{ x: 0, opacity: 1 }} // Animation state
+            transition={{ duration: 1.5 }} // Transition configuration
+          >
+            <S.TitleContainer>
+              <h1>
+                Desenvolvedor <span>Front-End</span>
+              </h1>
+              <S.ReactDiv>
+                <h1>React</h1>
+                <FaReact />
+              </S.ReactDiv>
+            </S.TitleContainer>
+          </motion.div>
 
           <S.ParagraphContainer>
             <p>
@@ -40,7 +48,7 @@ export const Home = () => {
             ]}
             wrapper="span"
             speed={50}
-            style={{ fontSize: "2em", display: "inline-block" }}
+            style={{ fontSize: "2em", display: "inline-block", zIndex: "-1" }}
             repeat={Infinity}
           />
         </S.RightContainer>

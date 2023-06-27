@@ -8,6 +8,8 @@ import { Header } from "./components/Header";
 import { Home } from "./pages/Home";
 import { Projects } from "./pages/Projects";
 import { About } from "./pages/About";
+import { Contact } from "./pages/Contact";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
       <Home />
       <Projects />
       <About />
+      <Contact />
+      <Footer />
     </ThemeProvider>
   );
 }

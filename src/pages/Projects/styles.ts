@@ -1,12 +1,20 @@
 import styled from "styled-components";
 
-export const ProjectsContainer = styled.div`
-  background-color: blue;
-  width: 90%;
+export const ProjectsContainer = styled.div``;
+
+export const ProjectsContent = styled.div`
   margin: 0 auto;
-  height: 1000px;
+  max-width: 1280px;
+  min-height: 720px;
+  background-color: ${(p) => p.theme.colors.white["white"]};
+
   display: flex;
   align-items: center;
-  text-align: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  div {
+    margin: 10px;
+  }
+
 `;

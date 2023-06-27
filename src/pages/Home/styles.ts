@@ -5,10 +5,15 @@ export const HomeContainer = styled.div``;
 export const HomeContent = styled.div`
   margin: 0 auto;
   max-width: 1280px;
-  height: 1000px;
+  height: 720px;
   background-color: ${(p) => p.theme.colors.white["white"]};
   padding: 3em;
   display: flex;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+
+  }
 `;
 
 export const RightContainer = styled.div`
@@ -18,12 +23,19 @@ export const RightContainer = styled.div`
   height: 100%;
   min-width: 60%;
 
+  @media (max-width: 600px) {
+    min-width: 100%;
+  }
 `;
 
 export const TitleContainer = styled.div`
   h1 span {
     color: #ffd700;
     font-weight: 700;
+  }
+
+  @media (max-width: 600px) {
+    margin-top: 100px;
   }
 `;
 
@@ -38,6 +50,7 @@ export const ReactDiv = styled.div`
   }
 
   svg {
+    z-index: -1;
     font-size: 100px;
     color: #0047ab;
 
