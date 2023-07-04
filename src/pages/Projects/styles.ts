@@ -10,6 +10,7 @@ export const ProjectsContent = styled.div`
 
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: space-evenly;
   flex-wrap: wrap;
 
@@ -17,4 +18,7 @@ export const ProjectsContent = styled.div`
     margin: 10px;
   }
 
+  h1 {
+    border-bottom: 2px solid black;
+  }
 `;

@@ -1,10 +1,14 @@
 import * as S from "./styles";
 import {
-  IoLogoNodejs,
-  IoLogoCss3,
-  IoLogoJavascript,
-  IoLogoHtml5,
-} from "react-icons/io";
+  SiMysql,
+  SiMongodb,
+  SiRedux,
+  SiNodedotjs,
+  SiCss3,
+  SiJavascript,
+  SiHtml5,
+  SiTypescript,
+} from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { motion } from "framer-motion";
 
@@ -32,10 +36,11 @@ export const Techs = () => {
   return (
     <S.TechContainer>
       <S.TechContent>
-        <S.TechTitle>
-          <h1>Minhas Tecnologias</h1>
-        </S.TechTitle>
         <S.ContainerMotionTechs>
+          <S.TechTitle>
+            <h1>Minhas Tecnologias</h1>
+          </S.TechTitle>
+
           <motion.div
             className="container"
             variants={container}
@@ -43,23 +48,48 @@ export const Techs = () => {
             animate="visible"
           >
             <motion.div variants={item}>
-              <IoLogoJavascript color="#F0DB4F" />
+              <SiMongodb color="#3fa037" />
+              <label>MONBODB</label>
             </motion.div>
 
             <motion.div variants={item}>
-              <IoLogoNodejs color="#3c873a" />
+              <SiMysql color="#00758f" />
+              <label>MYSQL</label>
+            </motion.div>
+
+            <motion.div variants={item}>
+              <SiJavascript color="#F0DB4F" />
+              <label>JAVASCRIPT</label>
+            </motion.div>
+
+            <motion.div variants={item}>
+              <SiRedux color="#764abc" />
+              <label>REDUX</label>
+            </motion.div>
+
+            <motion.div variants={item}>
+              <SiNodedotjs color="#3c873a" />
+              <label>NODE</label>
             </motion.div>
 
             <motion.div variants={item}>
               <FaReact color="#0047ab" />
+              <label>REACT</label>
             </motion.div>
 
             <motion.div variants={item}>
-              <IoLogoHtml5 color="#e34c26" />
+              <SiHtml5 color="#e34c26" />
+              <label>HTML5</label>
             </motion.div>
 
             <motion.div variants={item}>
-              <IoLogoCss3 color="#264de4" />
+              <SiCss3 color="#264de4" />
+              <label>CSS3</label>
+            </motion.div>
+
+            <motion.div variants={item}>
+              <SiTypescript color="#264de4" />
+              <label>TYPESCRIPT</label>
             </motion.div>
           </motion.div>
         </S.ContainerMotionTechs>

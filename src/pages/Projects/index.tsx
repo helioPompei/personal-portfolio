@@ -5,9 +5,8 @@ export const Projects = () => {
   return (
     <S.ProjectsContainer id="projects">
       <S.ProjectsContent>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
+        <h1>Area de Projetos</h1>
+        <Card />
       </S.ProjectsContent>
     </S.ProjectsContainer>
   );

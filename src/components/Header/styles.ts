@@ -56,9 +56,14 @@ export const ContactButtonContainer = styled.div`
     cursor: pointer;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     font-size: 1.25em;
+    transition: all 0.2s ease-in-out;
   }
 
   a:hover {
-    background-color: #d4b400;
+    transition: all 0.2s ease-in-out;
+    background-color: #FFD54F;
+    box-shadow: 0px 7.5px 10px rgba(255, 255, 0, 0.4);
+    color: #000;
+    transform: translateY(-1px);
   }
 `;
