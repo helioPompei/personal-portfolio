@@ -10,6 +10,7 @@ import { MdPerson, MdEmail } from "react-icons/md";
 import { BsWhatsapp, BsInstagram, BsLinkedin } from "react-icons/bs";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import emailjs from "@emailjs/browser";
 
 export const Contact = () => {
   const {
@@ -21,18 +22,33 @@ export const Contact = () => {
   } = useForm<messageFormData>({ resolver: zodResolver(messageFormSchema) });
 
   // Handle Submit
-  const handleSubmitEmailMessage = (data: messageFormData) => {
-    toast.success("Enviado com sucesso!", {
-      position: "top-right",
-      autoClose: 4000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "colored",
-    });
-    reset();
+  const handleSubmitEmailMessage = async (data: messageFormData) => {
+    // Template config
+    const templateParams = {
+      from_name: data.name,
+      email: data.email,
+      Message: data.message,
+    };
+
+    try {
+      await emailjs.send(
+        "service_64ifsq9",
+        "template_8xoxp2r",
+        templateParams,
+        "PhXMiCDh49_DJY1lZ"
+      );
+      toast.success("Enviado com sucesso!", {
+        position: "top-right",
+        autoClose: 4000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
+      reset();
+    } catch {}
   };
 
   return (
@@ -106,21 +122,18 @@ export const Contact = () => {
                 <Message
                   clearErrors={clearErrors}
                   message={errors.name.message}
-                  type="error"
                 />
               )}
               {errors.email?.message && (
                 <Message
                   clearErrors={clearErrors}
                   message={errors.email.message}
-                  type="error"
                 />
               )}
               {errors.message?.message && (
                 <Message
                   clearErrors={clearErrors}
                   message={errors.message.message}
-                  type="error"
                 />
               )}
             </div>
