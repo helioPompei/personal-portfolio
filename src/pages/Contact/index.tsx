@@ -27,7 +27,7 @@ export const Contact = () => {
     const templateParams = {
       from_name: data.name,
       email: data.email,
-      Message: data.message,
+      message: data.message,
     };
 
     try {
