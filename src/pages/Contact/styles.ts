@@ -5,15 +5,32 @@ export const ContactContainer = styled.div``;
 export const ContactContent = styled.div`
   margin: 0 auto;
   max-width: 1280px;
-  height: 720px;
+  min-height: 720px;
   background-color: ${(p) => p.theme.colors.white["white"]};
   padding: 3em;
   display: flex;
+
+  
+
+  @media (max-width: 1000px) {
+    padding: 2em;
+  }
+
+  @media (max-width: 825px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const LeftContainer = styled.div`
-  width: 40%;
+  
+  width: 50%;
   height: 100%;
+
+  @media (max-width: 825px) {
+    width: 100%;
+  }
 `;
 
 export const SocialMediaContainer = styled.div`
@@ -48,13 +65,18 @@ export const LinkStyled = styled.a`
 `;
 
 export const RightContainer = styled.div`
-  width: 60%;
+  
+  width: 50%;
   height: 100%;
 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  @media (max-width: 825px) {
+    width: 100%;
+  }
 `;
 
 export const StyledForm = styled.form`
@@ -118,6 +140,11 @@ export const StyledForm = styled.form`
       outline: none;
       border: none;
     }
+  }
+
+  @media (max-width: 1000px) {
+    width: 400px;
+    min-height: 550px;
   }
 `;
 

@@ -1,16 +1,18 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
+// Tech container out side
 export const TechContainer = styled.header`
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   width: 100%;
-  height: 200px;
+  min-height: 200px;
 `;
 
+// Tech Content intern
 export const TechContent = styled.div`
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-
   align-items: center;
   max-width: 1280px;
   height: 100%;
@@ -18,24 +20,21 @@ export const TechContent = styled.div`
 
 export const TechTitle = styled.div`
   h1 {
-    margin-top: 1em;
+    margin: 1em 0;
     font-size: 2em;
-    margin-bottom: 0.5em;
   }
 `;
 
-export const ContainerMotionTechs = styled.div`
+export const ContainerMotionTechs = styled(motion.div)`
   display: flex;
-  flex-direction: column;
   align-items: center;
-  width: 500px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
   height: 100%;
+  
 
   div {
-    display: flex;
-  }
-
-  div div {
     display: flex;
     align-items: center;
     flex-direction: column;

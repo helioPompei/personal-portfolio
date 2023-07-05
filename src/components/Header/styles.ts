@@ -6,6 +6,14 @@ export const HeaderContainer = styled.header`
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   position: fixed;
   width: 100%;
+  
+  @media (max-width: 625px) {
+    font-size: small;
+  }
+
+  @media (max-width: 500px) {
+    font-size: smaller;
+  }
 `;
 
 export const HeaderContent = styled.div`
@@ -61,7 +69,7 @@ export const ContactButtonContainer = styled.div`
 
   a:hover {
     transition: all 0.2s ease-in-out;
-    background-color: #FFD54F;
+    background-color: #ffd54f;
     box-shadow: 0px 7.5px 10px rgba(255, 255, 0, 0.4);
     color: #000;
     transform: translateY(-1px);
