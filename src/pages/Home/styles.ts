@@ -3,18 +3,17 @@ import styled, { keyframes } from "styled-components";
 export const HomeContainer = styled.div``;
 
 export const HomeContent = styled.div`
- 
   margin: 0 auto;
   max-width: 1280px;
   height: 720px;
-  
+
   background-color: ${(p) => p.theme.colors.white["white"]};
   padding: 3em;
   display: flex;
 
   @media (max-width: 900px) {
+    padding-top: 100px;
     flex-direction: column;
-    height: 900px;
   }
 `;
 

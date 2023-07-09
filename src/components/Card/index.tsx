@@ -1,7 +1,5 @@
 import * as S from "./styles";
-
 import { projects } from "../../data/projects";
-
 import { SiGithub } from "react-icons/si";
 
 const customOptions = {
@@ -24,7 +22,7 @@ export const Card = () => {
           </S.TitleProject>
 
           <div>
-            <img src={project.image} alt="" />
+            <img src={project.image} alt={project.title} />
           </div>
           <p>{project.description}</p>
           <S.TechDiv>

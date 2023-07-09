@@ -83,7 +83,7 @@ export const Contact = () => {
               color="#0e76a8"
             >
               <BsLinkedin />
-              <span>Linkdin</span>
+              <span>Linkedin</span>
             </S.LinkStyled>
           </S.SocialMediaContainer>
         </S.LeftContainer>

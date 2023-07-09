@@ -19,12 +19,12 @@ export const Header = () => {
             </Link>
           </li>
           <li>
-            <Link smooth={true} spy={true} offset={10} to="projects">
+            <Link smooth={true} spy={true} offset={-100} to="projects">
               Projetos
             </Link>
           </li>
           <li>
-            <Link smooth={true} spy={true} offset={10} to="about">
+            <Link smooth={true} spy={true} offset={-100} to="about">
               Sobre
             </Link>
           </li>
