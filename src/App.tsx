@@ -1,5 +1,5 @@
 // Styles
-import { GlobalStyles } from "./styles/GlobalStyles";
+import { GlobalStyle } from "./styles/GlobalStyles";
 import { ThemeProvider } from "styled-components";
 import { defaultTheme } from "./styles/defaultTheme";
 // Components
@@ -14,7 +14,7 @@ import { Footer } from "./components/Footer";
 function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
-      <GlobalStyles />
+      <GlobalStyle />
       <Header />
       <Home />
       <Projects />

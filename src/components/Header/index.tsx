@@ -1,41 +1,43 @@
-import * as S from "./styles";
-import { Link } from "react-scroll";
+import Hamburger from "hamburger-react";
+import { useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
+import { Link } from "react-scroll";
+import * as S from "./styles";
 
 export const Header = () => {
+  const [isOpen, setOpen] = useState(false);
+
   return (
     <S.HeaderContainer>
       <S.HeaderContent>
         <S.LogoContainer>
           <h1>
-            Helio.<span>DEV</span>
+            &lt;Helio.<span>DEV</span> /&gt;
           </h1>
         </S.LogoContainer>
 
-        <ul>
-          <li>
-            <Link smooth={true} spy={true} to="home">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link smooth={true} spy={true} offset={-100} to="projects">
-              Projetos
-            </Link>
-          </li>
-          <li>
-            <Link smooth={true} spy={true} offset={-100} to="about">
-              Sobre
-            </Link>
-          </li>
-        </ul>
+        <S.NavContainer isOpen={isOpen}>
+          <Link smooth={true} spy={true} offset={-100} to="home">
+            Home
+          </Link>
 
-        <S.ContactButtonContainer>
-          <Link smooth={true} spy={true} offset={10} to="contact">
+          <Link smooth={true} spy={true} offset={-100} to="projects">
+            Projetos
+          </Link>
+
+          <Link smooth={true} spy={true} offset={-100} to="about">
+            Sobre
+          </Link>
+
+          <S.StyledLink smooth={true} spy={true} offset={0} to="contact">
             <AiOutlineMail />
             <p>Contato</p>
-          </Link>
-        </S.ContactButtonContainer>
+          </S.StyledLink>
+        </S.NavContainer>
+
+        <S.StyledHamburgerContainer>
+          <Hamburger toggled={isOpen} rounded toggle={setOpen} />
+        </S.StyledHamburgerContainer>
       </S.HeaderContent>
     </S.HeaderContainer>
   );

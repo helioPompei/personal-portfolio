@@ -20,7 +20,7 @@ export const TechContent = styled.div`
 
 export const TechTitle = styled.div`
   h1 {
-    margin: 1em 0;
+    margin: 0.5em 0;
     font-size: 2em;
   }
 `;
@@ -31,8 +31,7 @@ export const ContainerMotionTechs = styled(motion.div)`
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  height: 100%;
-  
+  padding: 0 1em 0 1em;
 
   div {
     display: flex;

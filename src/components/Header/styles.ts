@@ -1,77 +1,115 @@
+import { Link } from "react-scroll";
 import styled from "styled-components";
+import { device } from "../../styles/BreakPoints";
+
+interface NavContainerProps {
+  isOpen: boolean;
+}
 
 export const HeaderContainer = styled.header`
-  z-index: 1;
-  background-color: ${(p) => p.theme.colors.white};
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   position: fixed;
+  z-index: 1;
   width: 100%;
-  
-  @media (max-width: 625px) {
-    font-size: small;
-  }
+  height: 80px;
 
-  @media (max-width: 500px) {
-    font-size: smaller;
-  }
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 `;
 
 export const HeaderContent = styled.div`
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  max-width: 1280px;
+  justify-content: space-between;
   margin: 0 auto;
-  background-color: white;
-  padding: 1rem 2em;
-
-  ul {
-    display: flex;
-    list-style: none;
-    gap: 1.5em;
-    font-size: 1.25em;
-  }
-
-  ul li:hover {
-    cursor: pointer;
-    color: #ffd700;
-  }
-
-  ul li .active {
-    color: #ffd700;
-    border-bottom: 3px solid #ffd700;
-    padding: 0.5px 0;
-  }
+  background-color: #fff;
+  padding: 0 2rem;
+  height: 80px;
+  max-width: 1280px;
 `;
 
 export const LogoContainer = styled.div`
   h1 span {
-    color: #ffd700;
+    color: ${({ theme }) => theme.colors.primary};
   }
 `;
 
-export const ContactButtonContainer = styled.div`
-  a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffd700;
-    border: none;
-    border-radius: 5px;
-    gap: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    font-size: 1.25em;
-    transition: all 0.2s ease-in-out;
-  }
+export const NavContainer = styled.div<NavContainerProps>`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: ${({ theme }) => theme.colors.secundary};
+  width: 500px;
+  height: 60px;
+  color: white;
+  border-radius: 10px;
+  font-size: 1rem;
 
   a:hover {
+    cursor: pointer;
+    color: ${({ theme }) => theme.colors.primary};
+  }
+
+  .active {
+    color: ${({ theme }) => theme.colors.primary};
+    border-bottom: 3px solid ${({ theme }) => theme.colors.primary};
+  }
+
+  @media ${device.md} {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: fixed;
+
+    font-size: 1.1rem;
+    border-radius: 0px;
+    width: 50%;
+    height: 100vh;
+    top: 80px;
+    right: ${(p) => (p.isOpen ? "0" : "-50%")};
+    padding: 1rem;
+    gap: 1.5rem;
+    background-color: ${({ theme }) => theme.colors.secundary};
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+  }
+
+  @media ${device.xs} {
+    width: 60%;
+    right: ${(p) => (p.isOpen ? "0" : "-60%")};
+  }
+`;
+
+export const StyledHamburgerContainer = styled.div`
+  display: none;
+  background-color: ${({ theme }) => theme.colors.secundary};
+  border-radius: 50%;
+  color: ${({ theme }) => theme.colors.primary};
+
+  @media ${device.md} {
+    display: flex;
+  }
+`;
+
+export const StyledLink = styled(Link)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: ${({ theme }) => theme.colors.primary};
+  border: none;
+  border-radius: 5px;
+  gap: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
     transition: all 0.2s ease-in-out;
-    background-color: #ffd54f;
-    box-shadow: 0px 7.5px 10px rgba(255, 255, 0, 0.4);
-    color: #000;
-    transform: translateY(-1px);
+    p,
+    svg {
+      color: ${({ theme }) => theme.colors.secundary};
+    }
+    transform: translateY(-2px);
   }
 `;
