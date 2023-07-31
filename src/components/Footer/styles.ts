@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
-  background: ${(p) => p.theme.colors.yellow["yellow-100"]};
+  background: ${(p) => p.theme.colors.primary};
 `;
 
 export const FooterContent = styled.div`

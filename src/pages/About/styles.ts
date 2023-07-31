@@ -6,10 +6,9 @@ export const AboutContent = styled.div`
   margin: 0 auto;
   max-width: 1280px;
   height: 720px;
-  background-color: ${(p) => p.theme.colors.white["white"]};
+  background-color: ${(p) => p.theme.colors.white};
   padding: 3em;
   display: flex;
-  
 
   @media (max-width: 825px) {
     padding: 0;
@@ -19,7 +18,6 @@ export const AboutContent = styled.div`
 `;
 
 export const LeftContainer = styled.div`
- 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,7 +52,6 @@ export const LeftContainer = styled.div`
 `;
 
 export const RightContainer = styled.div`
-  
   width: 50%;
   height: 100%;
 

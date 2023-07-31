@@ -6,7 +6,7 @@ export const ContactContent = styled.div`
   margin: 0 auto;
   max-width: 1280px;
   min-height: 720px;
-  background-color: ${(p) => p.theme.colors.white["white"]};
+  background-color: ${(p) => p.theme.colors.white};
   padding: 3em;
   display: flex;
 
@@ -80,7 +80,7 @@ export const RightContainer = styled.div`
 `;
 
 export const StyledForm = styled.form`
-  background-color: ${(p) => p.theme.colors.white["white"]};
+  background-color: ${(p) => p.theme.colors.white};
   width: 500px;
   min-height: 650px;
   display: flex;
@@ -119,7 +119,7 @@ export const StyledForm = styled.form`
     margin-top: 1em;
     color: white;
 
-    border: 3px solid ${(p) => p.theme.colors.yellow["yellow-100"]};
+    border: 3px solid ${(p) => p.theme.colors.primary};
     overflow: hidden;
     border-radius: 5px 5px 5px 5px;
 
@@ -129,7 +129,7 @@ export const StyledForm = styled.form`
       justify-content: center;
       width: 20%;
       height: 100%;
-      background-color: ${(p) => p.theme.colors.yellow["yellow-100"]};
+      background-color: ${(p) => p.theme.colors.primary};
     }
 
     input {

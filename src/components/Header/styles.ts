@@ -31,6 +31,12 @@ export const LogoContainer = styled.div`
   h1 span {
     color: ${({ theme }) => theme.colors.primary};
   }
+  @media ${device.sm} {
+    font-size: 0.8rem;
+  }
+  @media ${device.xs} {
+    font-size: 0.7rem;
+  }
 `;
 
 export const NavContainer = styled.div<NavContainerProps>`
