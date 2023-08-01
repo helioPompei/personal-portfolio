@@ -1,12 +1,12 @@
 import { FaReact } from "react-icons/fa";
-import styled, { keyframes } from "styled-components";
-import BGprojects from "../../assets/BGProjects.jpg";
-import { device } from "../../styles/BreakPoints";
 import { TypeAnimation } from "react-type-animation";
+import styled, { keyframes } from "styled-components";
+import BGHOME from "../../assets/BGHOME.jpg";
+import { device } from "../../styles/BreakPoints";
 
 // Home Container
 export const HomeContainer = styled.div`
-  background-image: url(${BGprojects});
+  background-image: url(${BGHOME});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,7 +30,6 @@ export const HomeContent = styled.div`
 `;
 
 export const LeftContainer = styled.div`
-  z-index: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;

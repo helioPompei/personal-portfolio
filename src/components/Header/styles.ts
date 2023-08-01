@@ -90,6 +90,7 @@ export const StyledHamburgerContainer = styled.div`
   display: none;
   background-color: ${({ theme }) => theme.colors.secundary};
   border-radius: 50%;
+  overflow: hidden;
   color: ${({ theme }) => theme.colors.primary};
 
   @media ${device.md} {

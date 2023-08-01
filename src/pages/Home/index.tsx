@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import image from "../../assets/Foto.jpg";
+import image from "../../assets/PHOTO.jpg";
 import { Techs } from "../../components/Techs";
 import { typedData } from "../../utils/TypeData";
 import * as S from "./styles";

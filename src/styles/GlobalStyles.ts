@@ -10,7 +10,25 @@ export const GlobalStyle = styled.createGlobalStyle`
     padding: 0;
   }
 
-  hmtl {
-    font-size: 62.5%; // sets 1rem = 10px
+  html {
+    ::-webkit-scrollbar {
+      width: 15px;
+    }
+    ::-webkit-scrollbar {
+      color: blue;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: ${(p) => p.theme.colors.primary};
+      border: 2px solid #fff;
+      border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: ${(p) => p.theme.colors.secundary};
+    }
+
+    -webkit-tap-highlight-color: transparent;
   }
 `;
