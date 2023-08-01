@@ -14,7 +14,6 @@ export const ProjectsContainer = styled.div`
 `;
 
 export const ProjectsContent = styled.div`
-  border: 1px solid black;
   margin: 0 auto;
   max-width: 1280px;
   min-height: 980px;

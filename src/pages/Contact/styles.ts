@@ -10,8 +10,6 @@ export const ContactContent = styled.div`
   padding: 3em;
   display: flex;
 
-  
-
   @media (max-width: 1000px) {
     padding: 2em;
   }
@@ -24,7 +22,6 @@ export const ContactContent = styled.div`
 `;
 
 export const LeftContainer = styled.div`
-  
   width: 50%;
   height: 100%;
 
@@ -47,7 +44,6 @@ export const LinkStyled = styled.a`
   display: flex;
   align-items: center;
   margin-top: 1em;
-  border: 1px solid black;
   height: 2em;
   width: 300px;
   padding: 1em;
@@ -65,7 +61,6 @@ export const LinkStyled = styled.a`
 `;
 
 export const RightContainer = styled.div`
-  
   width: 50%;
   height: 100%;
 
