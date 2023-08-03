@@ -1,9 +1,11 @@
 import styled from "styled-components";
-import BGPROJECT from "../../assets/BGPROJECT.jpg";
+import ProjectBackgroundImage from "../../assets/backgrounds/ProjectBackgroundImage.jpg";
 import { device } from "../../styles/BreakPoints";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+
 export const ProjectsContainer = styled.div`
-  background-image: url(${BGPROJECT});
+  background-image: url(${ProjectBackgroundImage});
   background-position: none;
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,26 +17,39 @@ export const ProjectsContainer = styled.div`
 
 export const ProjectsContent = styled.div`
   margin: 0 auto;
-  max-width: 1280px;
-  min-height: 980px;
-  padding-top: 200px;
-
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-
-  div {
-    margin: 10px;
-  }
+  max-width: 1280px;
+  min-height: 1280px;
+  padding-top: 300px;
 
   h1 {
-    border-bottom: 2px solid black;
+    margin-bottom: 2rem;
   }
 
   @media ${device.md} {
     padding-top: 800px;
     padding-bottom: 100px;
   }
+`;
+
+export const StyledSwiper = styled(Swiper)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 720px;
+  z-index: 0;
+
+
+`;
+
+export const StyledSwiperSlide = styled(SwiperSlide)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+
 `;

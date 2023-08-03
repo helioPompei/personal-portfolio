@@ -1,15 +1,13 @@
 import styled from "styled-components";
-import PHOTODATABASE from "../../assets/PHOTODATABASE.jpg";
-import PHOTOFRONT from "../../assets/PHOTOFRONT.jpg";
-import PHOTOBACK from "../../assets/PHOTOBACK.jpg";
+import BackEndImage from "../../assets/images/BackEndImage.jpg";
+import DataBaseImage from "../../assets/images/DataBaseImage.jpg";
+import FrontEndImage from "../../assets/images/FrontEndImage.jpg";
 import { device } from "../../styles/BreakPoints";
 
-// Tech container out side
 export const TechContainer = styled.header`
   height: 0px;
 `;
 
-// Tech Content intern
 export const TechContent = styled.div`
   margin: 0 auto;
   display: flex;
@@ -44,7 +42,7 @@ export const TechCard = styled.div`
   }
 
   &:hover.frontcard {
-    background-image: url(${PHOTOFRONT});
+    background-image: url(${FrontEndImage});
     background-size: cover;
     background-position: center;
     color: white;
@@ -54,7 +52,7 @@ export const TechCard = styled.div`
   }
 
   &:hover.backcard {
-    background-image: url(${PHOTOBACK});
+    background-image: url(${BackEndImage});
     background-size: cover;
     background-position: center;
     color: white;
@@ -64,7 +62,7 @@ export const TechCard = styled.div`
   }
 
   &:hover.databasecard {
-    background-image: url(${PHOTODATABASE});
+    background-image: url(${DataBaseImage});
     background-size: cover;
     background-position: center;
     color: white;

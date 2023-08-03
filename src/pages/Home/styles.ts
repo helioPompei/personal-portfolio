@@ -1,18 +1,16 @@
 import { FaReact } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import styled, { keyframes } from "styled-components";
-import BGHOME from "../../assets/BGHOME.jpg";
+import HomeBackgroundImage from "../../assets/backgrounds/HomeBackgroundImage.jpg";
 import { device } from "../../styles/BreakPoints";
 
-// Home Container
 export const HomeContainer = styled.div`
-  background-image: url(${BGHOME});
+  background-image: url(${HomeBackgroundImage});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 `;
 
-// Home Content
 export const HomeContent = styled.div`
   margin: 0 auto;
   max-width: 1280px;

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import image from "../../assets/PHOTO.jpg";
+import MyPhotoImage from "../../assets/images/MyPhotoImage.jpg";
 import { Techs } from "../../components/Techs";
 import { typedData } from "../../utils/TypeData";
 import * as S from "./styles";
@@ -37,7 +37,7 @@ export const Home = () => {
 
         <S.RightContainer>
           <div>
-            <img src={image} alt="Foto de Helio Pompei" />
+            <img src={MyPhotoImage} alt="Foto de Helio Pompei" />
           </div>
         </S.RightContainer>
       </S.HomeContent>

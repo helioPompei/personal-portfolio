@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import BGHOME from "../../assets/BGHOME.jpg";
+import HomeBackgroundImage from "../../assets/backgrounds/HomeBackgroundImage.jpg";
 
 export const AboutContainer = styled.div`
-  background-image: url(${BGHOME});
+  background-image: url(${HomeBackgroundImage});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
